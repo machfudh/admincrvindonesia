@@ -41,7 +41,7 @@
           </form>
           </div><!-- col-7 -->
         </div><!-- row -->
-        <p class="tx-center tx-white-5 tx-12 mg-t-15">Copyright &copy; 2018. All Rights Reserved. Card Delivery Application by nproject</p>
+        <p class="tx-center tx-white-5 tx-12 mg-t-15">Copyright &copy; 2020. All Rights Reserved. CR-V Club Indonesia</p>
       </div><!-- signin-box -->
     </div><!-- am-signin-wrapper -->
     </body>

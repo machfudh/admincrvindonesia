@@ -29,7 +29,7 @@
                 <?php $this->load->view($main_view); ?>
             </div><!-- am-pagebody -->
             <div class="am-footer">
-                <span>Copyright &copy; 2018 All Rights Reserved. Kurir by nproject</span>
+                <span>Copyright &copy; 2020. All Rights Reserved. CR-V Club Indonesia</span>
                 <!--<span>Created by: ThemePixels, Inc.</span>-->
             </div><!-- am-footer -->
         </div><!-- am-mainpanel -->

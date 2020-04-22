@@ -40,10 +40,10 @@
                                         <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">Today's Registration</h6>
                                         <p class="tx-12"><?php echo $lctoday; ?></p>
                                     </div>
-                                    <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
+                                    <!--<a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>-->
                                 </div><!-- d-flex -->
                                 <h2 class="mg-b-5 tx-inverse tx-lato"><?php echo $dataInproccess; ?></h2>
-                                <p class="tx-12 mg-b-0"><?php echo "Rp. " . $danaInproccess; ?></p>
+                                <!--<p class="tx-12 mg-b-0"><?php echo "Rp. " . $danaInproccess; ?></p>-->
                             </div>
                         </div><!-- card -->
                     </div><!-- col-4 -->
@@ -56,10 +56,10 @@
                                         <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">Today's Member</h6>
                                         <p class="tx-12"><?php echo $lctoday ?></p>
                                     </div>
-                                    <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
+                                    <!--<a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>-->
                                 </div><!-- d-flex -->
                                 <h2 class="mg-b-5 tx-inverse tx-lato"><?php echo $dataSuccess; ?></h2>
-                                <p class="tx-12 mg-b-0"><?php echo "Rp. " . $danaSuccess; ?></p>
+                                <!--<p class="tx-12 mg-b-0"><?php echo "Rp. " . $danaSuccess; ?></p>-->
                             </div>
                         </div><!-- card -->
                     </div><!-- col-4 -->
@@ -72,10 +72,10 @@
                                         <h6 class="tx-12 tx-uppercase tx-inverse tx-bold mg-b-5">All Member</h6>
                                         <p class="tx-12"><?php echo $lctoday; ?></p>
                                     </div>
-                                    <a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>
+                                    <!--<a href="" class="tx-gray-600 hover-info"><i class="icon ion-more tx-16 lh-0"></i></a>-->
                                 </div><!-- d-flex -->
                                 <h2 class="mg-b-5 tx-inverse tx-lato"><?php echo $dataReturn; ?></h2>
-                                <p class="tx-12 mg-b-0"><?php echo "Rp. " . $danaReturn; ?></p>
+                                <!--<p class="tx-12 mg-b-0"><?php echo "Rp. " . $danaReturn; ?></p>-->
                             </div>
                         </div><!-- card -->
                     </div><!-- col-4 -->
@@ -116,7 +116,7 @@
                 </div>
             </div><!-- am-pagebody -->
             <div class="am-footer">
-                <span>Copyright &copy; 2018 All Rights Reserved. Kurir by nproject</span>
+                <span>Copyright &copy; 2020. All Rights Reserved. CR-V Club Indonesia</span>
                 <!--<span>Created by: ThemePixels, Inc.</span>-->
             </div><!-- am-footer -->
         </div><!-- am-mainpanel -->

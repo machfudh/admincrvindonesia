@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>CRV Indonesia</title>
+<title>CR-V Club Indonesia</title>
 
 <meta content="Nusa Pro Media Solusi" name="description" />
 <meta content="Moh Machfudh" name="author" />

@@ -191,11 +191,17 @@ class Welcome extends CI_Controller {
             );
             $this->table->set_template($tmpl);
             $this->table->set_heading(
-                    array('data' => 'No', 'style' => 'width:3%'), array('data' => 'Seg No', 'style' => 'width:10%'), array('data' => 'Noref', 'style' => 'width:10%'), array('data' => 'Name'), array('data' => 'Address', 'style' => 'width:30%'), array('data' => 'Status', 'style' => 'width:10%'), array('data' => 'Courier', 'style' => 'width:10%'));
+                    array('data' => 'No', 'style' => 'width:3%'), 
+                    array('data' => 'Nopung', 'style' => 'width:10%'), 
+                    array('data' => 'Nama', 'style' => 'width:10%'), 
+                    array('data' => 'Chapter', 'style' => 'width:25%'),
+                    array('data' => 'No Polisi', 'style' => 'width:7%'),
+                    array('data' => 'Provinsi', 'style' => 'width:15%'),
+                    array('data' => 'Kabupaten', 'style' => 'width:20%'));
             $i = 0 + $offset;
             foreach ($mDatalist as $sDataList) {
                 if ($this->session->userdata('access') == '257') {
-                    $this->table->add_row( ++$i, anchor('report/viewbarang/' . $sDataList->id_barang, $sDataList->seqno), $sDataList->noref, $sDataList->nama, $sDataList->alamat1, $sDataList->statusketerangan, $sDataList->kurirnama
+                     $this->table->add_row(++$i, anchor('regulmember/action/edit/' . $sDataList->id_member, $sDataList->nopung), $sDataList->nama,$sDataList->namachapter, $sDataList->nopolisi, $sDataList->provinsi,$sDataList->kabupaten
 //                            anchor($this->tabel . '/action/edit/' . $sDataList->id_barang, '<i class="icon ion-edit"></i>', array('class' => "edit-row", 'data-original-title' => 'Edit')) . "&nbsp&nbsp&nbsp" .
 //                            anchor($this->tabel . '/action/delete/' . $sDataList->id_barang, '<i class="icon ion-trash-a"></i>', array('class' => "delete-row", 'data-original-title' => 'Delete', 'onclick' => "return confirm('Anda yakin akan menghapus data ini?')"))
                     );

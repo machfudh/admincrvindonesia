@@ -19,9 +19,9 @@ use PHPMailer\PHPMailer\Exception;
 class Mailer {
 
     protected $_ci;
-    protected $email_pengirim = 'info@crvclubindonesia.com'; // Isikan dengan email pengirim
+    protected $email_pengirim = 'info.crvclub@gmail.com'; // Isikan dengan email pengirim
     protected $nama_pengirim = 'CR-V Club Indonesia'; // Isikan dengan nama pengirim
-    protected $password = 'cci212bandung'; // Isikan dengan password email pengirim
+    protected $password = 'B4nduNg!'; // Isikan dengan password email pengirim
 
     public function __construct() {
         $this->_ci = &get_instance(); // Set variabel _ci dengan Fungsi2-fungsi dari Codeigniter
@@ -35,13 +35,29 @@ class Mailer {
         $mail = new PHPMailer;
         $mail->isSMTP();
 
+//        $mail->Mailer = "smtp"; 
+//        $mail->Host = 'mail.crvclubindonesia.com';
+//        $mail->Username = $this->email_pengirim; // Email Pengirim
+//        $mail->Password = $this->password; // Isikan dengan Password email pengirim
+//        $mail->Port = 587;
+//        $mail->SMTPAuth = true;
+//        $mail->SMTPSecure = 'tls';
+////        $mail->SMTPDebug = 2; // Aktifkan untuk melakukan debugging
+//        $mail->SMTPOptions = array(
+//            'ssl' => array(
+//                'verify_peer' => false,
+//                'verify_peer_name' => false,
+//                'allow_self_signed' => true
+//            )
+//        );
+        
         $mail->Mailer = "smtp"; 
-        $mail->Host = 'mail.crvclubindonesia.com';
+        $mail->Host = 'smtp.gmail.com';
         $mail->Username = $this->email_pengirim; // Email Pengirim
         $mail->Password = $this->password; // Isikan dengan Password email pengirim
-        $mail->Port = 587;
+        $mail->Port = 465;
         $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'tls';
+        $mail->SMTPSecure = 'ssl';
 //        $mail->SMTPDebug = 2; // Aktifkan untuk melakukan debugging
         $mail->SMTPOptions = array(
             'ssl' => array(
@@ -50,6 +66,7 @@ class Mailer {
                 'allow_self_signed' => true
             )
         );
+       
 
         $mail->setFrom($this->email_pengirim, $this->nama_pengirim);
         $mail->addAddress($data['email_penerima'], '');

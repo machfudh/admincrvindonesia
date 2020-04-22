@@ -25,7 +25,7 @@ date_default_timezone_set("Asia/Jakarta");
 |
 */
 //$config['base_url'] = 'http://localhost/admincrv';
-$config['base_url'] = 'http://192.168.1.17/admincrv';
+$config['base_url'] = 'http://192.168.1.21/admincrv';
 
 /*
 |--------------------------------------------------------------------------
